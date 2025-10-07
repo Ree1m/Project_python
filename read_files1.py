@@ -140,9 +140,16 @@ def convert_to_excel(data, output_file: str) -> None:
     print(f"✅ Excel file saved successfully at: {output_file}")
 
 # مسارات الملفات
-pdf_path = r"C:\Users\ream8\Desktop\project\10988496532.pdf"
+
+pdf_path = r"C:\Users\ream8\Desktop\project\PDFReaderProject\10988496532.pdf"
 extracting = read_pdf(pdf_path)
 pdf_data = filters(extracting)
 
+excel_path = r"C:\Users\ream8\Desktop\project\Tenant_Info.xlsx"
+convert_to_excel(pdf_data, excel_path)
+
+pdf_path = r"C:\Users\ream8\Desktop\Project\PDFReaderProject\pdfff123.pdf"
+extracting = read_pdf(pdf_path)
+pdf_data = filters(extracting)
 excel_path = r"C:\Users\ream8\Desktop\project\Tenant_Info.xlsx"
 convert_to_excel(pdf_data, excel_path)
